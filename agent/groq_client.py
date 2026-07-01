@@ -76,3 +76,27 @@ def call_json(
 
     print("[groq_client] Gave up after 2 attempts, using fallback.")
     return fallback
+
+def call_text(
+    system_prompt: str,
+    user_prompt: str,
+    fallback: str = "Okay, sounds good.",
+    temperature: float = 0.4,
+    reasoning_effort: str = "low",
+) -> str:
+    """Plain text completion (no JSON mode) — used by the eval user-simulator."""
+    try:
+        resp = _client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            temperature=temperature,
+            reasoning_effort=reasoning_effort,
+            max_completion_tokens=300,
+        )
+        return resp.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"[groq_client] API error in call_text: {e}")
+        return fallback

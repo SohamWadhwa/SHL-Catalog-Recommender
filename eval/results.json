@@ -1,0 +1,391 @@
+{
+  "mean_recall_at_10": 0.3161904761904762,
+  "turn_cap_violations": 0,
+  "total_invalid_urls": 0,
+  "total_api_errors": 0,
+  "per_trace": [
+    {
+      "trace_id": "C1",
+      "recall_at_10": 0.3333333333333333,
+      "recommended_names": [
+        "Enterprise Leadership Report 2.0",
+        "Enterprise Leadership Report 1.0",
+        "MFS 360 Enterprise Leadership Report",
+        "OPQ Leadership Report",
+        "Executive Scenarios"
+      ],
+      "expected_names": [
+        "Occupational Personality Questionnaire OPQ32r",
+        "OPQ Universal Competency Report 2.0",
+        "OPQ Leadership Report"
+      ],
+      "matched_names": [
+        "opq leadership report"
+      ],
+      "missed_names": [
+        "occupational personality questionnaire opq32r",
+        "opq universal competency report 2.0"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "We need a solution for senior leadership."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are five assessments that align well with senior leadership needs, covering enterprise leadership benchmarking, leadership potential, and executive judgement:"
+        }
+      ]
+    },
+    {
+      "trace_id": "C2",
+      "recall_at_10": 0.4,
+      "recommended_names": [
+        "Linux Programming (General)",
+        "Networking and Implementation (New)",
+        "Programming Concepts",
+        "C Programming (New)",
+        "Linux Operating System"
+      ],
+      "expected_names": [
+        "Smart Interview Live Coding",
+        "Linux Programming (General)",
+        "Networking and Implementation (New)",
+        "SHL Verify Interactive G+",
+        "Occupational Personality Questionnaire OPQ32r"
+      ],
+      "matched_names": [
+        "linux programming (general)",
+        "networking and implementation (new)"
+      ],
+      "missed_names": [
+        "occupational personality questionnaire opq32r",
+        "shl verify interactive g+",
+        "smart interview live coding"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "I'm hiring a senior Rust engineer for high-performance networking infrastructure. What assessments should I use?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are five assessments that closely match a senior Rust engineer role focused on high\u2011performance networking:"
+        }
+      ]
+    },
+    {
+      "trace_id": "C3",
+      "recall_at_10": 0.0,
+      "recommended_names": [
+        "Customer Service Phone Solution",
+        "Entry Level Customer Service (General) Solution"
+      ],
+      "expected_names": [
+        "SVAR Spoken English (US) (New)",
+        "Contact Center Call Simulation (New)",
+        "Entry Level Customer Serv - Retail & Contact Center",
+        "Customer Service Phone Simulation"
+      ],
+      "matched_names": [],
+      "missed_names": [
+        "contact center call simulation (new)",
+        "customer service phone simulation",
+        "entry level customer serv - retail & contact center",
+        "svar spoken english (us) (new)"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "We're screening 500 entry-level contact centre agents. Inbound calls, customer service focus. What should we use?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are three assessments that closely match your need for screening 500 entry\u2011level contact\u2011centre agents handling inbound customer service calls."
+        }
+      ]
+    },
+    {
+      "trace_id": "C4",
+      "recall_at_10": 0.4,
+      "recommended_names": [
+        "Financial and Banking Services (New)",
+        "Financial Accounting (New)",
+        "Economics (New)",
+        "Verify - Numerical Ability",
+        "SHL Verify Interactive \u2013 Numerical Reasoning"
+      ],
+      "expected_names": [
+        "SHL Verify Interactive \u2013 Numerical Reasoning",
+        "Financial Accounting (New)",
+        "Basic Statistics (New)",
+        "Graduate Scenarios",
+        "Occupational Personality Questionnaire OPQ32r"
+      ],
+      "matched_names": [
+        "financial accounting (new)",
+        "shl verify interactive \u2013 numerical reasoning"
+      ],
+      "missed_names": [
+        "basic statistics (new)",
+        "graduate scenarios",
+        "occupational personality questionnaire opq32r"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "Hiring graduate financial analysts \u2014 final-year students, no work experience. We need numerical reasoning and a finance knowledge test."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are five assessments that match your need for finance knowledge and numerical reasoning for graduate analysts:"
+        }
+      ]
+    },
+    {
+      "trace_id": "C5",
+      "recall_at_10": 0.0,
+      "recommended_names": [
+        "Retail Sales and Service Simulation",
+        "Entry Level Sales Solution",
+        "Universal Competency Framework Job profiling guide"
+      ],
+      "expected_names": [
+        "Global Skills Assessment",
+        "Global Skills Development Report",
+        "Occupational Personality Questionnaire OPQ32r",
+        "OPQ MQ Sales Report",
+        "Sales Transformation 2.0 - Individual Contributor"
+      ],
+      "matched_names": [],
+      "missed_names": [
+        "global skills assessment",
+        "global skills development report",
+        "occupational personality questionnaire opq32r",
+        "opq mq sales report",
+        "sales transformation 2.0 - individual contributor"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "As part of our restructuring and annual talent audit, we need to re-skill our Sales organization. What solutions do you recommend?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are three assessments that align well with upskilling your sales team: the Retail Sales and Service Simulation, the Entry Level Sales Solution, and the Universal Competency Framework Job profiling guide."
+        }
+      ]
+    },
+    {
+      "trace_id": "C6",
+      "recall_at_10": 0.5,
+      "recommended_names": [
+        "Manufac. & Indust. - Safety & Dependability 8.0",
+        "Manufacturing & Industrial - Vigilance Focus 8.0",
+        "Dependability and Safety Instrument (DSI)"
+      ],
+      "expected_names": [
+        "Manufac. & Indust. - Safety & Dependability 8.0",
+        "Workplace Health and Safety (New)"
+      ],
+      "matched_names": [
+        "manufac. & indust. - safety & dependability 8.0"
+      ],
+      "missed_names": [
+        "workplace health and safety (new)"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "We're hiring plant operators for a chemical facility. Safety is absolute top priority \u2014 reliability, procedure compliance, never cutting corners. What do you recommend?"
+        },
+        {
+          "role": "assistant",
+          "content": "Based on your focus on safety, reliability and strict procedural compliance for plant operators, I've shortlisted three assessments that directly target those behaviours."
+        }
+      ]
+    },
+    {
+      "trace_id": "C7",
+      "recall_at_10": 0.2,
+      "recommended_names": [
+        "HIPAA (Security)",
+        "Written Spanish",
+        "Data Entry Alphanumeric Split Screen - US"
+      ],
+      "expected_names": [
+        "HIPAA (Security)",
+        "Medical Terminology (New)",
+        "Microsoft Word 365 - Essentials (New)",
+        "Dependability and Safety Instrument (DSI)",
+        "Occupational Personality Questionnaire OPQ32r"
+      ],
+      "matched_names": [
+        "hipaa (security)"
+      ],
+      "missed_names": [
+        "dependability and safety instrument (dsi)",
+        "medical terminology (new)",
+        "microsoft word 365 - essentials (new)",
+        "occupational personality questionnaire opq32r"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "We're hiring bilingual healthcare admin staff in South Texas \u2014 they handle patient records and need to be assessed in Spanish. HIPAA compliance is critical. What assessments work?"
+        },
+        {
+          "role": "assistant",
+          "content": "Here are three assessments that match your needs: HIPAA (Security) for compliance knowledge, Written Spanish for bilingual proficiency, and Data Entry Alphanumeric Split Screen \u2013 US for accurate record handling."
+        }
+      ]
+    },
+    {
+      "trace_id": "C8",
+      "recall_at_10": 0.4,
+      "recommended_names": [
+        "MS Excel (New)",
+        "MS Word (New)",
+        "MS Office Basic Computer Literacy (New)"
+      ],
+      "expected_names": [
+        "Microsoft Excel 365 (New)",
+        "Microsoft Word 365 (New)",
+        "MS Excel (New)",
+        "MS Word (New)",
+        "Occupational Personality Questionnaire OPQ32r"
+      ],
+      "matched_names": [
+        "ms excel (new)",
+        "ms word (new)"
+      ],
+      "missed_names": [
+        "microsoft excel 365 (new)",
+        "microsoft word 365 (new)",
+        "occupational personality questionnaire opq32r"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "I need to quickly screen admin assistants for Excel and Word daily."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are three short assessments that match your need to quickly screen admin assistants on Excel and Word: MS Excel (New), MS Word (New) and MS Office Basic Computer Literacy (New)."
+        }
+      ]
+    },
+    {
+      "trace_id": "C9",
+      "recall_at_10": 0.42857142857142855,
+      "recommended_names": [
+        "Java Platform Enterprise Edition 7 (Java EE 7)",
+        "Spring (New)",
+        "Amazon Web Services (AWS) Development (New)",
+        "Docker (New)",
+        "Cloud Computing (New)",
+        "Java Web Services (New)"
+      ],
+      "expected_names": [
+        "Core Java (Advanced Level) (New)",
+        "Spring (New)",
+        "SQL (New)",
+        "Amazon Web Services (AWS) Development (New)",
+        "Docker (New)",
+        "SHL Verify Interactive G+",
+        "Occupational Personality Questionnaire OPQ32r"
+      ],
+      "matched_names": [
+        "amazon web services (aws) development (new)",
+        "docker (new)",
+        "spring (new)"
+      ],
+      "missed_names": [
+        "core java (advanced level) (new)",
+        "occupational personality questionnaire opq32r",
+        "shl verify interactive g+",
+        "sql (new)"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "Here's the JD for an engineer we need to fill. Can you recommend an assessment battery? \"Senior Full-Stack Engineer \u2014 5+ years across Core Java, Spring, REST API design, Angular, SQL/relational databases, AWS deployment, and Docker. Will own end-to-end microservice delivery, contribute to architectural decisions, and mentor mid-level engineers. Strong CI/CD and cloud-native experience required.\""
+        },
+        {
+          "role": "assistant",
+          "content": "Here are six assessments that closely match the technical skills required for your Senior Full\u2011Stack Engineer role:"
+        }
+      ]
+    },
+    {
+      "trace_id": "C10",
+      "recall_at_10": 0.5,
+      "recommended_names": [
+        "Verify - G+",
+        "Verify - Numerical Ability",
+        "Occupational Personality Questionnaire OPQ32r",
+        "Graduate Scenarios"
+      ],
+      "expected_names": [
+        "SHL Verify Interactive G+",
+        "Graduate Scenarios"
+      ],
+      "matched_names": [
+        "graduate scenarios"
+      ],
+      "missed_names": [
+        "shl verify interactive g+"
+      ],
+      "num_messages_used": 2,
+      "hit_turn_cap_without_shortlist": false,
+      "invalid_urls_seen": [],
+      "api_errors": [],
+      "transcript": [
+        {
+          "role": "user",
+          "content": "We run a graduate management trainee scheme. We need a full battery \u2014 cognitive, personality, and situational judgement. All recent graduates."
+        },
+        {
+          "role": "assistant",
+          "content": "Here are five assessments that together cover cognitive ability, personality and situational judgement for recent graduates: Verify\u202f-\u202fG+ (general cognitive ability), Verify\u202f-\u202fNumerical Ability, Verify\u202f-\u202fVerbal Ability, Occupational Personality Questionnaire\u202fOPQ32r, and Graduate Scenarios (managerial judgement)."
+        }
+      ]
+    }
+  ]
+}

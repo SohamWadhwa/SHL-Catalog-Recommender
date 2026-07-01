@@ -19,6 +19,8 @@ Design notes:
 
 import asyncio
 import logging
+import os
+import psutil
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
@@ -33,7 +35,9 @@ from agent.agent import run_agent
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("shl-recommender")
 
-AGENT_TIMEOUT_SECONDS = 25.0  # stay safely under the evaluator's 30s call limit
+process = psutil.Process(os.getpid())
+
+AGENT_TIMEOUT_SECONDS = 25.0
 
 SAFE_FALLBACK_RESPONSE = {
     "reply": "Something went wrong on our end. Could you try rephrasing your question?",
@@ -46,11 +50,6 @@ SAFE_TIMEOUT_RESPONSE = {
     "recommendations": [],
     "end_of_conversation": False,
 }
-
-
-# ---------------------------------------------------------------------------
-# Schema
-# ---------------------------------------------------------------------------
 
 class Message(BaseModel):
     role: Literal["user", "assistant"]
@@ -72,11 +71,6 @@ class ChatResponse(BaseModel):
     recommendations: list[Recommendation]
     end_of_conversation: bool
 
-
-# ---------------------------------------------------------------------------
-# App lifecycle
-# ---------------------------------------------------------------------------
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Loading retriever (FAISS index + embedding model)...")
@@ -87,11 +81,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="SHL Assessment Recommender", lifespan=lifespan)
-
-
-# ---------------------------------------------------------------------------
-# Global exception handlers — guarantee schema compliance no matter what
-# ---------------------------------------------------------------------------
+print(f"RSS: {process.memory_info().rss / 1024**2:.2f} MB")
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
